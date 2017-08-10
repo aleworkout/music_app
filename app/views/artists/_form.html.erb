@@ -1,3 +1,4 @@
+<h1>Formulario</h1>
 <%= form_for(@artist) do |f| %>
   <% if @artist.errors.any? %>
     <div id="error_explanation">
@@ -17,7 +18,7 @@
   </div>
   <div class="field">
     <%= f.label :genre_id %><br>
-    <%= f.number_field :genre_id %>
+    <%= f.collection_select :genre_id, @genres, :id, :name %>
   </div>
   <div class="actions">
     <%= f.submit %>

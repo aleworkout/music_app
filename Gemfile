@@ -52,3 +52,4 @@ end
 
 gem 'starter_generators'
 
+gem 'paperclip', '~> 5.1'
